@@ -1,0 +1,30 @@
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f1c863;
+}
+
+
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #1c5186;
+  /* background-color: #8d016a; */
+  /* background-color: #77609b; */
+  text-decoration: none;
+}
+
+.content-footer > p {
+  color: #f7ede1;
+}
+
+.copyright{
+  font-size: 0.9em;
+  color: #f7ede1;
+}

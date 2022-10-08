@@ -1,0 +1,110 @@
+/* @import url('http://fonts.cdnfonts.com/css/beatrise'); */
+
+@font-face {
+  font-family: "Beatrise";
+  src: url(/fonts/Beatrise.ttf) format("truetype");
+}
+
+:root {
+  --theme-color: #ca6239;
+  --neon-color: #1f1f1f;
+  --back-ground-color: #1f1f1f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  cursor: pointer;
+  font-family: "Beatrise", sans-serif;
+  font-size: 2.2em;
+  font-weight: 10;
+  text-align: left;
+  /* padding-left: 0.5em;
+    padding-top: 0.3em; */
+  z-index: 100;
+  background: transparent;
+}
+
+.logo a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+header {
+  /* for proper raven animation  */
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.neon-text {
+  color: #fff;
+
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--neon-color), 0 0 20px var(--neon-color), 0 0 25px var(--neon-color), 0 0 30px var(--neon-color), 0 0 35px var(--neon-color); */
+  text-shadow:
+    /* White glow */ 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    /* Green glow */ 0 0 42px var(--neon-color), 0 0 82px var(--neon-color),
+    0 0 92px var(--neon-color), 0 0 102px var(--neon-color),
+    0 0 151px var(--neon-color);
+
+  animation: flicker 1.2s infinite alternate;
+  /* animation: pulsate 0.11s ease-in-out infinite alternate;  */
+
+  /* border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em; */
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px rgb(182, 167, 37), 0 0 11px #fff, 0 0 19px #fff,
+      0 0 40px var(--neon-color), 0 0 80px var(--neon-color),
+      0 0 90px var(--neon-color), 0 0 100px var(--neon-color),
+      0 0 150px var(--neon-color);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+      0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+  }
+
+  0% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09,
+      0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 140px #f09;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.2em;
+  }
+
+  header {
+    padding: 40px;
+  }
+}

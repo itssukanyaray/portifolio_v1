@@ -1,0 +1,48 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  #progress {
+    background-color: #ffffff;
+    /* background-color: #03cc65; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 65px;
+    width: 65px;
+    /* display: grid; */
+    display: none;
+    place-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    /* opacity: 90%; */
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #640d78;
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: aquamarine;
+  }
+
+ 
+  @media only screen and (max-width: 765px) {
+    #progress {
+        height: 40px;
+        width: 40px;
+      }
+
+    #progress-value {
+    font-size: 18px;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    }
+}

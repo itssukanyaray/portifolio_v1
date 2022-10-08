@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+/* <===== SECTION 1 ====> */
+.overlay {
+  background-image: url(/img/suku-background-bw-single.jpg);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.055);
+  mix-blend-mode: overlay;
+  opacity: 0.45;
+}
+
+.text {
+  color: #fff;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  /* margin-left: auto; */
+  /* margin-top: 30px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+/* .max-width h2{
+    padding-left: 10px;
+    font-size: 2.2em;
+    font-weight: 16;
+    color: aqua;
+    z-index: 100;
+} */
+
+section {
+  width: 100%;
+  background-color: var(--back-ground-color);
+}
+
+section .container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+section.max-width {
+  width: 100%;
+}
+
+section .container > * {
+  margin: 2rem;
+}
+
+.content {
+  color: #fff;
+  transform: translateY(-50px);
+}
+
+.imgContainer {
+  transform: translateY(50px);
+  width: 100%;
+}
+
+.title {
+  color: rgb(80, 243, 255);
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+/* .border {
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color:  rgb(80, 243, 255);
+  bottom: 0;
+  left: 0;
+} */
+
+/* <===== SECTION 2 ====> */
+
+.dance {
+  padding: 10px 100px;
+  max-width: 1100px;
+}
+
+.section-2 {
+  position: relative;
+}
+
+.section-2 .overlay {
+  background-image: url(/img/suku-dance-pose.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-position: 800px;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+/* Video Grid */
+.container-2 {
+  position: relative;
+  min-height: 100vh;
+  /* background:#334; */
+}
+
+.container-2 .video-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container-2 .video-container .vid {
+  /* height: 250px; */
+  width: 450px;
+  border: 2px solid #440404;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.container-2 .video-container .vid div {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.container-2 .video-container .vid:hover div {
+  transform: scale(1.04);
+}
+
+.container-2 .video-container .vid .video-wrapper iframe {
+  /* margin-left: auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  /* .content{
+    min-width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  } */
+
+  /* SECTION 1  */
+
+  .overlay {
+    background-image: url(/img/suku-background-bw-single.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+  }
+
+  .imgContainer .video-wrapper {
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  /* text  */
+  section .container {
+    /* padding: 130px 10px; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    /* padding: 10px 10px; */
+    display: none;
+  }
+
+  /* moblie allingment  */
+  .container .opacity {
+    /* padding-top: 100px; */
+    margin: 0px 0px;
+    /* display: none; */
+  }
+
+  /* video  */
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  #thriller {
+    /* display: none; */
+    margin-top: 150px;
+  }
+
+  /* SECTION 2  */
+  /* section text  */
+  section .dance {
+    padding: 0px 48px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2em;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .section-2 .overlay {
+    background-image: url(/img/suku-dance-pose-2.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* background-size: cover; */
+    /* background-color: aqua; */
+    /* position: absolute; */
+    background-position: 0px 0px;
+    opacity: 0.5;
+    width: 100%;
+    /* height: 100%; */
+    /* opacity: 0.8; */
+  }
+
+  .dance {
+    min-width: 100vw;
+  }
+
+  section .container {
+    grid-template-columns: 1fr;
+  }
+
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+}
