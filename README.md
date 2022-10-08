@@ -16,5 +16,7 @@
   <br>
 </p>
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/itssukanyaray/portifolio_v1/main/img/chrome_dHkCnZYx7P.jpg?token=GHSAT0AAAAAABZWM5F3AOYIMWVZ6A7HSL44Y2BV5PA" alt="Website ScreenShot"/>
+</p>
 
