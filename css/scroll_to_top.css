@@ -30,7 +30,8 @@ html{
     display: grid;
     place-items: center;
     font-size: 35px;
-    color: aquamarine;
+    /* color: aquamarine; */
+    color: rgb(231, 153, 238);
   }
 
  
