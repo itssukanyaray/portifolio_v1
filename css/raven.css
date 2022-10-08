@@ -253,12 +253,14 @@ a:hover {
   width: 100%;
 } */
 
+
 .nav__list-item a:hover {
-  color: rgba(255, 255, 255, 1);
+  /* color: rgba(255, 255, 255, 1); */
+  color: #1FD6DC;
 }
-.nav__list-item.active-nav a {
+/* .nav__list-item.active-nav a {
   color: #755D99;
-}
+} */
 .nav__list-item.active-nav a:after {
   height: 4px;
   opacity: 1;
