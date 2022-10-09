@@ -13,7 +13,7 @@
 }
 
 /* Confetti Canvas  */
-#my-canvas{
+#my-canvas {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
   pointer-events: none;
 }
 
-#my-canvas.active{
+#my-canvas.active {
   visibility: visible;
 }
 

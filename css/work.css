@@ -99,6 +99,12 @@ section .container > * {
   position: relative;
 }
 
+.key-name {
+  color: #57a4e4;
+}
+.key-value {
+  color: #4cb383;
+}
 /* .border {
   position: absolute;
   width: 0%;
